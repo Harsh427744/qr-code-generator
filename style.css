@@ -1,0 +1,112 @@
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Dark blue gradient */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e0e7ff; /* Light blueish text */
+}
+
+/* Container grid */
+.grid {
+    background: rgba(20, 32, 54, 0.85);
+    border-radius: 15px;
+    padding: 30px 40px;
+    width: 350px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Heading */
+.grid h2 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: #a5b8ff;
+}
+
+/* Center the QR image */
+#img {
+    margin: 10px auto 20px;
+    display: block;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(38, 85, 127, 0.5);
+}
+
+/* Select dropdown styling */
+select#size {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    background: #1e3c72;
+    color: #c6d3ff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.7);
+}
+
+select#size:hover {
+    background: #16395a;
+}
+
+/* Textarea styling */
+textarea#qrtext {
+    width: 100%;
+    height: 100px;
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+    font-family: inherit;
+    background: #12233c;
+    color: #cbd8ff;
+    box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.8);
+    transition: box-shadow 0.3s ease;
+}
+
+textarea#qrtext::placeholder {
+    color: #7a8bbd;
+}
+
+textarea#qrtext:focus {
+    outline: none;
+    box-shadow: 0 0 12px 2px #3a60a1;
+    background: #1c385f;
+    color: #fff;
+}
+
+/* Button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #1e3c72;
+    border: none;
+    border-radius: 25px;
+    color: #cfd8ff;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(30, 60, 114, 0.8);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #16395a;
+    box-shadow: 0 6px 20px rgba(22, 57, 90, 1);
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+    .grid {
+        width: 90%;
+        padding: 20px;
+    }
+}

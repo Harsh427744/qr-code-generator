@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid">
+        <h2 align="center">QR Code Generator</h2>
+        <center>
+            <img src="" id="qrimg" alt="Your QR Code will appear here">
+        </center>
+        <select id="size">
+            <option value="100x100">100*100</option>
+            <option value="150x150">150*150</option>
+            <option value="200x200">200*200</option>
+            <option value="250x250">250*250</option>
+            <option value="300x300">300*300</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Enter Your Text" id="qrtext"></textarea>
+        <br><br>
+        <input type="submit" value="Generate QR Code" onclick="generateQR()">
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
